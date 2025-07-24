@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>David | Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="nav-container">
-      <h1 class="logo">David<span>Nafi</span>sy</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Work</a>
-      </nav>
-      <a href="#" class="github-link">
-        <img src="https://github.com/Davidnfy" alt="GitHub" />
-      </a>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio | David Nafisy</title>
+  </head>
+  <body id="home">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">David Nafisy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <section class="hero">
-    <div class="hero-left">
-      <p class="intro">Hello, I'm David,</p>
-      <h2 class="title">Full stack<br><span>Developer</span></h2>
-      <a href="#" class="contact-btn">Contact Me</a>
-    </div>
-    <div class="hero-right">
-      <img src="img/WhatsApp Image 2025-07-21 at 16.25.15_f5fa54f6.jpg" alt="Profile" class="profile-img">
-    </div>
-  </section>
+    <section class="jumbotron text-center">
+      <img src="img/WhatsApp Image 2025-07-21 at 16.25.15_f5fa54f6.jpg" alt="David Nafisy" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">David Nafisy</h1>
+      <p class="lead">Student | SMKN 5 Malang</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="10" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,80C672,64,768,64,864,96C960,128,1056,192,1152,186.7C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
 
-  <section class="about-section">
-    <h3 class="about-title">about</h3>
-    <p class="about-text">
-      Hi.. Saya David, saya adalah seorang pelajar yang ingin menjadi full stuck developer dan saya ingin belajar mengenai dunia teknologi.
-    </p>
-  </section>
-
-  <section class="skills">
-    <div class="skill-box">
-      <h4>Front-End and Back-End</h4>
-      <p> 1 Years Experience</p>
-    </div>
-    <div class="skill-box">
-      <h4>Python</h4>
-      <p>5 Months Experience</p>
-    </div>
-    <div class="skill-box">
-      <h4>Study</h4>
-      <p>11 Years Experience</p>
-    </div>
-  </section>
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col" data-aos="fade-down"><h2>About Me</h2></div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4" data-aos="fade-right">
+            <p>Hi!.. I'm David Nafisy, a high school student from the city of MALANG, EAST JAVA, INDONESIA. I want to become a skilled web developer and I enjoy coding because my dream is to become a full stack developer/game developer.</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-left">
+            <p>I also enjoy playing both Mobile and PC games, such as Genshin Impact, Minecraft, Fortnite, PUBG Mobile, Valorant, GTA V (RP), and many more. Currently, I only play PUBG Mobile and Valorant. Besides gaming, I also like playing the keyboard/piano. I really enjoy accompanying any song with the piano/keyboard, as it is my favorite hobby.</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="10" d="M0,96L48,122.7C96,149,192,203,288,192C384,181,480,107,576,80C672,53,768,75,864,101.3C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
 
     <section id="projects">
       <div class="container">
@@ -75,7 +72,7 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Thank You!<3</strong> Pesan Anda sudah terkirim.
+              <strong>Thank You!</strong> Pesan Anda sudah terkirim. 
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="contact-form">
