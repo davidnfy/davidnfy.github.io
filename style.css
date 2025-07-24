@@ -1,20 +1,185 @@
-.jumbotron {
-  padding-top: 6rem;
-  background-color: #e2edff;
-  height: 100vh;
-  position: relative;
+/* ---- RESET & VARIABEL ---- */
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --bg:#1e1e1e;
+  --surface:#2c2c2c;
+  --text:#ffffff;
+  --muted:#aaaaaa;
+  --accent:#a8bbcb;          /* biru muda judul */
+  --shadow:0 4px 6px rgba(0,0,0,.35);
+  --radius:18px;
+  --speed:.3s;
+}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  padding:25px;
 }
 
-#projects {
-  background-color: #e2edff;
+/* ---- NAVBAR ---- */
+header{margin-bottom:60px;}
+.nav-container{
+  max-width:1170px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{font-size:1.5rem;font-weight:800;}
+.logo span{color:var(--muted);}
+nav a{
+  color:var(--muted);
+  text-decoration:none;
+  margin:0 18px;
+  position:relative;
+  transition:color var(--speed);
+}
+nav a:hover{color:var(--text);}
+.github-link img{
+  width:26px;
+  filter:invert(1) brightness(1.1);
 }
 
-section {
-  padding-top: 5rem;
+/* ---- HERO ---- */
+.hero{
+  max-width:1170px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+.hero-left{flex:1 1 320px;}
+.intro{color:var(--muted);margin-bottom:12px;}
+.title{font-size:3.1rem;font-weight:800;color:var(--accent);line-height:1.15;margin-bottom:25px;}
+.title span{color:var(--text);}
+.contact-btn{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+  border-bottom:2px solid var(--text);
+  padding-bottom:4px;
+  transition:opacity var(--speed);
+}
+.contact-btn:hover{opacity:.7;}
+.profile-img{
+  width:260px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
 }
 
-@media (max-width: 576px) {
-  .navbar {
-    background-color: black !important;
-  }
+/* ---- ABOUT ---- */
+.about-section{
+  max-width:1170px;
+  margin:70px auto 40px;
+  border-top:1.5px solid #555;
+  padding-top:35px;
+}
+.about-title{
+  font-size:1.4rem;
+  text-transform:uppercase;
+  font-weight:800;
+  margin-bottom:12px;
+}
+.about-text{max-width:620px;color:var(--muted);}
+
+/* ---- SKILLS ---- */
+.skills{
+  max-width:1170px;
+  margin:auto;
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+}
+.skill-box{
+  flex:1 1 280px;
+  background:var(--surface);
+  padding:35px 30px;
+  border-radius:var(--radius);
+  text-align:center;
+  box-shadow:var(--shadow);
+  transition:transform var(--speed);
+}
+.skill-box:hover{transform:translateY(-6px);}
+.skill-box h4{font-size:1.3rem;margin-bottom:12px;}
+.skill-box p{color:var(--muted);font-size:.95rem;}
+
+/* ---- SIMPLE GRID (ganti bootstrap) ---- */
+.container{max-width:1170px;margin:auto;padding:0 15px;}
+.row{display:flex;flex-wrap:wrap;margin:0 -15px;}
+[class*="col-"]{padding:0 15px;flex:1;}
+.col-md-4{flex:0 0 33.333%;}
+@media(max-width:768px){.col-md-4{flex:0 0 100%;}}
+
+/* ---- PROJECT CARDS ---- */
+.card{
+  background:var(--surface);
+  border:none;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  height:100%;
+}
+.card-img-top{width:100%;display:block;}
+.card-body{padding:20px;}
+.card-title{font-weight:700;margin-bottom:8px;}
+.card-text{color:var(--muted);font-size:.95rem;margin-bottom:18px;}
+.btn{
+  display:inline-block;
+  padding:8px 18px;
+  background:var(--accent);
+  color:var(--bg);
+  border-radius:8px;
+  font-weight:600;
+  text-decoration:none;
+  transition:opacity var(--speed);
+}
+.btn:hover{opacity:.85;}
+
+#contact label{margin-bottom:4px;font-weight:600;}
+#contact input,#contact textarea{
+  width:100%;
+  background:var(--surface);
+  border:2px solid #444;
+  border-radius:10px;
+  padding:10px 14px;
+  color:var(--text);
+  margin-bottom:15px;
+}
+#contact .btn-primary{background:var(--accent);border:none;color:var(--bg);}
+.alert{background:#198754;border:none;color:#fff;border-radius:10px;padding:12px 16px;}
+
+footer{
+  margin-top:80px;
+  background: linear-gradient(135deg, #222222, #111111);
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+footer a {
+  color: var(--muted);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover,
+footer a:focus {
+  color: var(--text);
+  text-decoration: underline;
+}
+footer i {
+  color: #e25555;
+  vertical-align: middle;
+  margin-right: 4px;
 }
